@@ -1,0 +1,560 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('abcd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire background */
+  /* Adjust the brightness of the background image */
+  filter: brightness(80%);
+   /* You can adjust the percentage as needed */
+}
+
+  .quick-chat-container {
+    width: 310px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 35px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  }
+  #joinForm{
+    margin-top: 25px;
+  }
+
+
+  .inside-container{
+    background-color: #f2f2f2;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .quick-chat-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .join-room-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .join-room-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  .message ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.message  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: #e30707;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+
+.send-button {
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+  }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+  }
+
+  .chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fa-microphone {
+    font-size: 16px;
+  }
+
+
+  header {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .user-info,
+.room-id,
+.header-right {
+  margin: 0 10px;
+}
+
+
+.leave-room {
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .user-status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 5px;
+  }
+
+
+
+  .chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+
+
+  .welcome-message {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  
+
+
+
+
+
+
+
+  /* Add these styles to your existing CSS */
+
+/* Style for the message list */
+#messages {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll; /* Enable vertical scrolling for long messages */
+  max-height: 300px; /* Limit the height of the message list */
+}
+
+/* Style for individual chat messages */
+#messages li {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  word-wrap: break-word; /* Wrap long messages */
+}
+
+/* Style for chat input area */
+.chat-input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style for the message input */
+#input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Style for the send button */
+.send-button {
+  background-color: #3f51b5; /* Blue color for the send button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Hover effect for the send button */
+.send-button:hover {
+  background-color: #2a3eb1; /* Darker blue color on hover */
+}
+
+
+
+
+.............................this is csss of the  chat app  
+
+
+
+
+
+
+
+let socket;
+let userName;
+let roomID;
+
+// Function to join the chat room
+function joinChat() {
+  userName = document.getElementById('nameInput').value.trim();
+  roomID = document.getElementById('roomInput').value.trim();
+
+  if (userName && roomID) {
+    document.getElementById('joinForm').style.display = 'none';
+    document.getElementById('chatContainer').style.display = 'block';
+
+    // Connect to Socket.io server
+    socket = io();
+
+    // Emit 'join' event to server
+    socket.emit('join', { userName, roomID });
+
+    // Update UI with username and roomID
+    document.getElementById('usernameDisplay').innerText = `UserName: ${userName}`; // Update the username display
+    document.getElementById('roomIDDisplay').innerText = `Room ID: ${roomID}`;
+
+    // Listen for 'userList' event from server
+    socket.on('userList', (users) => {
+      updateUserList(users);
+    });
+
+    // Listen for incoming chat messages
+    socket.on('chat-message', (data) => {
+      const { sender, message } = data;
+      console.log('Received message:', data);
+      displayMessage(`${sender}: ${message}`);
+    });
+  }
+}
+
+// Event listener for form submission
+document.getElementById('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const message = document.getElementById('input').value.trim();
+  if (message) {
+    // Emit 'chat message' event to server with sender and receiver information
+    socket.emit('chat-message', { sender: userName, receiver: roomID, message });
+    document.getElementById('input').value = '';
+  }
+});
+
+// Function to leave the room
+function leaveRoom() {
+  // Reload the page
+  window.location.reload();
+}
+
+function updateUserList(users) {
+  const userListElement = document.getElementById('userList');
+  userListElement.innerHTML = ''; // Clear previous user list
+
+  users.forEach(user => {
+    const userItem = document.createElement('div');
+    userItem.classList.add('user-item');
+    userItem.classList.add(user.status === 'online' ? 'online' : 'offline');
+
+    const userStatus = document.createElement('span');
+    userStatus.classList.add('user-status');
+    userStatus.style.backgroundColor = user.status === 'online' ? 'green' : 'red';
+
+    const username = document.createElement('span');
+    username.classList.add('username');
+    username.textContent = user.name; // Use 'name' instead of 'userName'
+
+    userItem.appendChild(userStatus);
+    userItem.appendChild(username);
+
+    userListElement.appendChild(userItem);
+  });
+}
+
+
+function displayMessage(msg) {
+  console.log('Received message:', msg);
+
+  const item = document.createElement('li');
+  item.textContent = msg;
+
+  const messageList = document.getElementById('messages');
+  if (messageList) {
+    messageList.appendChild(item);
+  } else {
+    console.error('Message list not found');
+  }
+}
+
+......................... this isi client.js 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socket.io Chat</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<div class="background-container">
+
+  <div class="quick-chat-container">
+    <div id="joinForm">
+      <div class="quick-chat-title">Quick Chat</div>
+      <input type="text" id="nameInput" class="input-field" placeholder="Enter your name" /> 
+      <input type="text" id="roomInput" class="input-field" placeholder="Enter room ID" /> 
+      <button class="join-room-btn" onclick="joinChat()">Join Chat</button>
+    </div>
+
+  </div>
+
+  <div id="chatContainer"  style="display: none;">
+
+    <div class="container">
+
+        <header>
+            <div class="user-info" id="usernameDisplay">UserName:</div>
+            <div class="room-id" id="roomIDDisplay">Room ID:</div>
+            <div class="header-right">
+              <span class="live-chat">Live Chat</span>
+              <button class="leave-room" onclick="leaveRoom()">Leave Room</button>
+            </div>
+          </header>
+          
+          <div class="content">
+
+
+
+            <!-- HTML code for the sidebar user list -->
+            <div class="sidebar">
+                <div class="sidebar-header">ACTIVE USERS</div>
+                <div class="user-list" id="userList">
+                  <!-- User list items will be dynamically added here -->
+                  <!-- Example user list item -->
+                  <div class="user-item online">
+                    <span class="user-status"></span>
+                    <span class="username">bipul</span>
+                  </div>
+                </div>
+              </div>
+              
+  
+              
+    
+
+          </div>
+
+     <div class="chat-area">
+
+      <ul id="messages"></ul>
+        <form id="form">
+        <div class="welcome-message">Welcome to JoinChat!</div>
+        <div class="chat-input">
+          <input type="text" id="input" class="inputsend" autocomplete="off" placeholder="Type your message here..." />
+          <button type="submit" class="send-button">Send <i class="fa fa-microphone"></i></button>
+        </div>
+      </form>
+     </div>
+    
+  </div>
+
+   </div>
+
+
+
+
+
+  </div>
+<script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
+
+...............this is the index.html 
+
+
+
+
+const express = require('express');
+const app = express();
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+
+// Store room-based user lists
+const roomUsers = {};
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+
+  // Listen for 'join' event
+  socket.on('join', ({ userName, roomID }) => {
+    socket.join(roomID); // Join the specified room
+
+    // Add user to the room's user list
+    if (!roomUsers[roomID]) {
+      roomUsers[roomID] = [];
+    }
+    roomUsers[roomID].push({ name: userName, status: 'online' });
+
+    // Emit the updated user list for the room to all clients in the room
+    io.to(roomID).emit('userList', roomUsers[roomID]);
+
+    console.log(`${userName} joined room ${roomID}`);
+  });
+
+  // Listen for 'chat message' event with sender and receiver information
+  socket.on('chat-message', ({ sender, receiver, message }) => {
+    // Broadcast the chat message to the specified room
+    io.to(receiver).emit('chat-message', { sender, message });
+  });
+
+  // Handle user disconnection
+  socket.on('disconnect', () => {
+    console.log('a user disconnected');
+
+    // Remove the user from the appropriate room's user list
+    const rooms = Array.from(socket.rooms);
+    rooms.forEach((roomID) => {
+      if (roomID !== socket.id && roomUsers[roomID]) {
+        const userIndex = roomUsers[roomID].findIndex((user) => user.name === socket.userName);
+        if (userIndex !== -1) {
+          roomUsers[roomID].splice(userIndex, 1);
+          io.to(roomID).emit('userList', roomUsers[roomID]); // Update user list for all clients in the room
+        }
+      }
+    });
+  });
+});
+
+// Serve the static files from the 'public' directory
+app.use(express.static('public'));
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+http.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+
+
+
+...................this is the  server.js code  
+
+
+
+
+
+
+
+
+
+
+
+this is final code ..................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

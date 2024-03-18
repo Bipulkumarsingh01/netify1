@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socket.io Chat</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<div class="background-container">
+
+  <div class="quick-chat-container">
+    <div id="joinForm">
+      <div class="quick-chat-title">Quick Chat</div>
+      <input type="text" id="nameInput" class="input-field" placeholder="Enter your name" /> 
+      <input type="text" id="roomInput" class="input-field" placeholder="Enter room ID" /> 
+      <button class="join-room-btn" onclick="joinChat()">Join Chat</button>
+    </div>
+
+  </div>
+
+  <div id="chatContainer"  style="display: none;">
+
+    <div class="container">
+
+        <header>
+            <div class="user-info" id="usernameDisplay">UserName:</div>
+            <div class="room-id" id="roomIDDisplay">Room ID:</div>
+            <div class="header-right">
+              <span class="live-chat">Live Chat</span>
+              <button class="leave-room" onclick="leaveRoom()">Leave Room</button>
+            </div>
+          </header>
+          
+          <div class="content">
+
+
+
+            <!-- HTML code for the sidebar user list -->
+            <div class="sidebar">
+                <div class="sidebar-header">ACTIVE USERS</div>
+                <div class="user-list" id="userList">
+                  <!-- User list items will be dynamically added here -->
+                  <!-- Example user list item -->
+                  <div class="user-item online">
+                    <span class="user-status"></span>
+                    <span class="username">bipul</span>
+                  </div>
+                </div>
+              </div>
+              
+  
+              
+    
+
+          </div>
+
+     <div class="chat-area">
+
+      <ul id="messages"></ul>
+        <form id="form">
+        <div class="welcome-message">Welcome to JoinChat!</div>
+        <div class="chat-input">
+          <input type="text" id="input" class="inputsend" autocomplete="off" placeholder="Type your message here..." />
+          <button type="submit" class="send-button">Send <i class="fa fa-microphone"></i></button>
+        </div>
+      </form>
+     </div>
+    
+  </div>
+
+   </div>
+
+
+
+
+
+  </div>
+<script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
